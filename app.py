@@ -2,8 +2,6 @@
 # -- Import section --
 from datetime import datetime
 from flask import Flask
-# from flask import render_template
-# from flask import request
 from flask import render_template
 from flask import request
 
@@ -15,8 +13,6 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index')
 def index():
-    return "hello world"
-    return render_template('nav.html', time=datetime.now())
 
 @app.route('/basquiat')
 def basquiat():
@@ -30,9 +26,14 @@ def monet():
 def close():
     return render_template('Close.html', time=datetime.now)
 
+
+@app.route('/close')
+def close():
+    return render_template('close.html', time=datetime.now)
+
 @app.route('/kahlo')
 def kahlo():
-    return render_template('Kahlo.html', time=datetime.now)
+    return render_template('kahlo.html', time=datetime.now)
 
 @app.route('/paintings')
 def paintings():
@@ -40,4 +41,4 @@ def paintings():
 
 @app.route('/sculptures')
 def sculptures():
-    return render_template('sculptures.html', time=datetime.now) 
+    return render_template('sculptures.html', time=datetime.now)
