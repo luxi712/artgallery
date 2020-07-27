@@ -27,7 +27,7 @@ def monet():
 
 @app.route('/close')
 def close():
-    return render_template('close.html', time=datetime.now)
+    return render_template('Close.html', time=datetime.now)
 
 @app.route('/kahlo')
 def kahlo():
