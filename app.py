@@ -1,10 +1,9 @@
- # ---- YOUR APP STARTS HERE ----
+# ---- YOUR APP STARTS HERE ----
 # -- Import section --
 from datetime import datetime
 from flask import Flask
 from flask import render_template
 from flask import request
-
 
 
 # -- Initialization section --
@@ -13,31 +12,32 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index')
 def index():
+    return render_template("nav.html", time=datetime.now)
 
 @app.route('/basquiat')
 def basquiat():
     return render_template('basquiat.html', time=datetime.now)
 
+
 @app.route('/monet')
 def monet():
     return render_template('Monet.html', time=datetime.now)
+
 
 @app.route('/close')
 def close():
     return render_template('Close.html', time=datetime.now)
 
 
-@app.route('/close')
-def close():
-    return render_template('close.html', time=datetime.now)
-
 @app.route('/kahlo')
 def kahlo():
     return render_template('kahlo.html', time=datetime.now)
 
+
 @app.route('/paintings')
 def paintings():
     return render_template('paintings.html', time=datetime.now)
+
 
 @app.route('/sculptures')
 def sculptures():
