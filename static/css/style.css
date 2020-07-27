@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
-body {
+* {
     font-family: 'Raleway', sans-serif; 
 }
 
@@ -71,3 +71,5 @@ body {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+
+

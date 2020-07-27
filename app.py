@@ -31,7 +31,7 @@ def close():
 
 @app.route('/kahlo')
 def kahlo():
-    return render_template('kahlo.html', time=datetime.now)
+    return render_template('Kahlo.html', time=datetime.now)
 
 
 @app.route('/paintings')
