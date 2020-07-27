@@ -4,6 +4,7 @@
     font-family: 'Raleway', sans-serif; 
 }
 
+/* -----NAVBAR-----*/
 /* Navbar container */
 .navbar {
   overflow: hidden;
@@ -71,5 +72,29 @@
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
 
+/*-----HOMESCREEN IMAGE------*/
+/* The hero image */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("static/images/gallery.jpg");
 
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
