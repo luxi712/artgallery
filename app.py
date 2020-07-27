@@ -13,6 +13,7 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index')
 def index():
+    return render_template('nav.html', time=datetime.now)
 
 @app.route('/basquiat')
 def basquiat():
@@ -27,13 +28,9 @@ def close():
     return render_template('Close.html', time=datetime.now)
 
 
-@app.route('/close')
-def close():
-    return render_template('Close.html', time=datetime.now)
-
 @app.route('/kahlo')
 def kahlo():
-    return render_template('kahlo.html', time=datetime.now)
+    return render_template('Kahlo.html', time=datetime.now)
 
 @app.route('/paintings')
 def paintings():
