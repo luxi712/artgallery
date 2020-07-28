@@ -81,7 +81,7 @@ h1 {
 /*-----HOMESCREEN IMAGE------*/
 /* The hero image */
 .hero-image {
-  background-image: url("/static/images/gallery.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/images/gallery.jpg");
 
   /* Set a specific height */
   height: 100%;
