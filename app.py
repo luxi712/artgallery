@@ -34,11 +34,15 @@ def kahlo():
     return render_template('Kahlo.html', time=datetime.now)
 
 
-@app.route('/paintings')
-def paintings():
-    return render_template('paintings.html', time=datetime.now)
+@app.route('/architecture')
+def architecture():
+    return render_template('architecture.html', time=datetime.now)
 
 
 @app.route('/sculptures')
 def sculptures():
     return render_template('sculptures.html', time=datetime.now)
+
+@app.route('/print')
+def print():
+    return render_template('print.html', time=datetime.now)
