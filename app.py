@@ -46,3 +46,7 @@ def sculptures():
 @app.route('/print')
 def print():
     return render_template('print.html', time=datetime.now)
+
+@app.route('/sources')
+def sources():
+    return render_template('sources.html', time=datetime.now)
