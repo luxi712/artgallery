@@ -12,41 +12,41 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template("nav.html", time=datetime.now)
+    return render_template("nav.html", time=datetime.now())
 
 @app.route('/basquiat')
 def basquiat():
-    return render_template('basquiat.html', time=datetime.now)
+    return render_template('basquiat.html', time=datetime.now())
 
 
 @app.route('/monet')
 def monet():
-    return render_template('Monet.html', time=datetime.now)
+    return render_template('Monet.html', time=datetime.now())
 
 
 @app.route('/close')
 def close():
-    return render_template('Close.html', time=datetime.now)
+    return render_template('Close.html', time=datetime.now())
 
 
 @app.route('/kahlo')
 def kahlo():
-    return render_template('Kahlo.html', time=datetime.now)
+    return render_template('Kahlo.html', time=datetime.now())
 
 
 @app.route('/architecture')
 def architecture():
-    return render_template('architecture.html', time=datetime.now)
+    return render_template('architecture.html', time=datetime.now())
 
 
 @app.route('/sculptures')
 def sculptures():
-    return render_template('sculptures.html', time=datetime.now)
+    return render_template('sculptures.html', time=datetime.now())
 
 @app.route('/print')
 def print():
-    return render_template('print.html', time=datetime.now)
+    return render_template('print.html', time=datetime.now())
 
 @app.route('/sources')
 def sources():
-    return render_template('sources.html', time=datetime.now)
+    return render_template('sources.html', time=datetime.now())
